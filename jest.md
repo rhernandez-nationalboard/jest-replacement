@@ -1,5 +1,5 @@
 ### Stats
-- Suite Runtime: 3.8s
+- Suite Runtime: 4.2s
 
 ### Setting up test
 Description: 'describe' setups a test suite, 'it' defines an individual test, and 'expect' is used to perform any required assertions

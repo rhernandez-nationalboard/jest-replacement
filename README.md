@@ -4,25 +4,30 @@
 - Jest
 - Vitest & RTL (React Testing Library)
 - Mocha
+- Enzyme
 - Jasmine
 
-### Frameworks we're not considering
-- Puppeteer
-- Webdriver IO
-- Cypress
-- Story Book
+### Jest
+- Total Tests Suites (2)
+- Suite Runtime: 8.668
+- Wizard.spec.tsx runtime: 5.722
+- Language-select.spec.tsx: 6.242
+- Replacing with ESBuild: 11 sec sometimes 4.533
+- Replacing with SWC: 8s - 5s
 
-
-Reason: These are higher level automation / ui testing frameworks. We're specifically looking to narrow down on the unit test side of things.
-
+### Vitest
+- Total Tests Suites (2)
+- Suite Runtime: 3.2s
+- Pro
+  - On save will only rerun affected test
+  - wizard.spec.tsx runtime on save: 565ms
 
 ### Mocha
-- Pros
-  - Strong organization structure
-  - Lightwieght and simple
 - Cons
-  - No support for assertions, spies, and mocks by default. Usually Chai is paired with Mocha to cover these missing aspects.
-- Weaker documentation
+  - Missing support for mocks. Supplemental libraries such as sinon do not seem to support mocking modules.
+
+### Enzyme
+- Not considering as it seems more like a replacement for React Testing Library
 
 ### Jasime
 - Pros

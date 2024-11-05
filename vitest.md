@@ -1,5 +1,5 @@
 ### Stats
-- Suite runtime: 4.86s
+- Suite runtime: 3.65s
 - Suite runtime on save: 800ms
 
 ### Setting up test
